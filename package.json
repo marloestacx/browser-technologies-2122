@@ -1,0 +1,27 @@
+{
+  "name": "browser-technologies-2122",
+  "version": "1.0.0",
+  "description": "_Robuuste, toegankelijke websites ontwerpen en maken …_",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marloestacx/browser-technologies-2122.git"
+  },
+  "author": "Marloes Tacx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marloestacx/browser-technologies-2122/issues"
+  },
+  "homepage": "https://github.com/marloestacx/browser-technologies-2122#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
