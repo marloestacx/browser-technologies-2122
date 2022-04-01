@@ -9,149 +9,151 @@
   </head>
   <body>
     <header><h1>Enquete</h1></header>
-    <form action="/send" method="POST">
+    <form action="/" method="POST">
       <fieldset>
         <legend>Student</legend>
         <label for="studentName">Naam:</label>
-        <input type="text" name="" id="studentName" required><br />
+        <input type="text" name="studentName" id="studentName" required><br />
         <label for="studentID">Studentnummer:</label>
-        <input type="number" name="" id="studentID" required>
+        <input type="number" name="studentID" id="studentID" required>
     </fieldset>
     <fieldset>
         <legend>Vakken</legend>
         <fieldset>
        <h2>Web App From Scratch</h2>
-            <label for="teacherName">Naam van docenten:</label>
-            <input type="text" name="" id="teacherName" required><br />
+            <label for="WAFSteacherName">Naam van docenten:</label>
+            <input type="text" name="WAFSteacherName" id="WAFSteacherName" required><br />
             
             <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="weken1" id="week1-3" value="1-3">
+            <input type="radio" name="WAFSweeks" id="WAFSweeks1-3" value="1-3">
             <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="weken1" id="week4-6" value="4-6">
+            <input type="radio" name="WAFSweeks" id="WAFSweeks4-6" value="4-6">
             <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="weken1" id="week7-9" value="7-9">
+            <input type="radio" name="WAFSweeks" id="WAFSweeks7-9" value="7-9">
             <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="weken1" id="week10-12" value="10-12">
+            <input type="radio" name="WAFSweeks" id="WAFSweeks10-12" value="10-12">
             <label for="week10-12">weken 10-12</label><br />
 
-            <label for="material">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="" id="material" placeholder="1-10" required><br />
-            <label for="explanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="" id="explanation" placeholder="1-10" required><br />
-            <label for="understanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="" id="understanding" placeholder="1-10" required>
+            <label for="WAFSmaterial">Hoe moeilijk vond je de lesstof?</label>
+            <input type="number" min="1" max="10" name="WAFSmaterial" id="WAFSmaterial" placeholder="1-10" required><br />
+            <label for="WAFSexplanation">Hoe duidelijk was de uitleg?</label>
+            <input type="number" min="1" max="10" name="WAFSexplanation" id="WAFSexplanation" placeholder="1-10" required><br />
+            <label for="WAFSunderstanding">Hoe goed snap je het?</label>
+            <input type="number" min="1" max="10" name="WAFSunderstanding" id="WAFSunderstanding" placeholder="1-10" required>
         </fieldset>
-        <fieldset>
+        <!-- <fieldset>
             <h2>CSS To The Rescue</h2>
-            <label for="teacherName">Naam van docenten:</label>
-            <input type="text" name="" id="teacherName" required><br />
+            <label for="CSSteacherName">Naam van docenten:</label>
+            <input type="text" name="CSSteacherName" id="CSSteacherName" required><br />
 
             <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="weken2" id="week1-3" value="1-3">
+            <input type="radio" name="CSSweeks" id="CSSweeks1-3" value="1-3">
             <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="weken2" id="week4-6" value="4-6">
+            <input type="radio" name="CSSweeks" id="CSSweeks4-6" value="4-6">
             <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="weken2" id="week7-9" value="7-9">
+            <input type="radio" name="CSSweeks" id="CSSweeks7-9" value="7-9">
             <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="weken2" id="week10-12" value="10-12">
+            <input type="radio" name="CSSweeks" id="CSSweeks10-12" value="10-12">
             <label for="week10-12">weken 10-12</label><br />
 
-            <label for="material">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="" id="material" placeholder="1-10" required><br />
-            <label for="explanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="" id="explanation" placeholder="1-10" required><br />
-            <label for="understanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="" id="understanding" placeholder="1-10" required>
+            <label for="CSSmaterial">Hoe moeilijk vond je de lesstof?</label>
+            <input type="number" min="1" max="10" name="CSSmaterial" id="CSSmaterial" placeholder="1-10" required><br />
+            <label for="CSSexplanation">Hoe duidelijk was de uitleg?</label>
+            <input type="number" min="1" max="10" name="CSSexplanation" id="CSSexplanation" placeholder="1-10" required><br />
+            <label for="CSSunderstanding">Hoe goed snap je het?</label>
+            <input type="number" min="1" max="10" name="CSSunderstanding" id="CSSunderstanding" placeholder="1-10" required>
         </fieldset>
        
         <fieldset>
-            <h2>Human Centered Design</h2>
-            <label for="teacherName">Naam van docenten:</label>
-            <input type="text" name="" id="teacherName" required><br />
-
-            <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="weken6" id="week1-3" value="1-3">
-            <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="weken6" id="week4-6" value="4-6">
-            <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="weken6" id="week7-9" value="7-9">
-            <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="weken6" id="week10-12" value="10-12">
-            <label for="week10-12">weken 10-12</label><br />
-
-            <label for="material">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="" id="material" placeholder="1-10" required><br />
-            <label for="explanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="" id="explanation" placeholder="1-10" required><br />
-            <label for="understanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="" id="understanding" placeholder="1-10" required>
-        </fieldset>
-        <fieldset>
-          <h2>Realtime Web</h2>
-  
-            <label for="teacherName">Naam van docenten:</label>
-            <input type="text" name="" id="teacherName" required><br />
-
-            <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="weken3" id="week1-3" value="1-3">
-            <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="weken3" id="week4-6" value="4-6">
-            <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="weken3" id="week7-9" value="7-9">
-            <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="weken3" id="week10-12" value="10-12">
-            <label for="week10-12">weken 10-12</label><br />
-  
-            <label for="material">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="" id="material" placeholder="1-10" required><br />
-            <label for="explanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="" id="explanation" placeholder="1-10" required><br />
-            <label for="understanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="" id="understanding" placeholder="1-10" required>
-        </fieldset>
-        <fieldset>
             <h2>Progressive Web Apps</h2>
             <p>In welke weken van de minor had je het vak?</p>
-            <label for="teacherName">Naam van docenten:</label>
-            <input type="text" name="" id="teacherName" required><br />
-            <input type="radio" name="weken4" id="week1-3" value="1-3">
+            <label for="PWAteacherName">Naam van docenten:</label>
+            <input type="text" name="PWAteacherName" id="PWAteacherName" required><br />
+
+            <input type="radio" name="PWAweeks" id="PWAweeks1-3" value="1-3">
             <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="weken4" id="week4-6" value="4-6">
+            <input type="radio" name="PWAweeks" id="PWAweeks4-6" value="4-6">
             <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="weken4" id="week7-9" value="7-9">
+            <input type="radio" name="PWAweeks" id="PWAweeks7-9" value="7-9">
             <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="weken4" id="week10-12" value="10-12">
+            <input type="radio" name="PWAweeks" id="PWAweeks10-12" value="10-12">
             <label for="week10-12">weken 10-12</label><br />
-            <label for="material">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="" id="material" placeholder="1-10" required><br />
-            <label for="explanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="" id="explanation" placeholder="1-10" required><br />
-            <label for="understanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="" id="understanding" placeholder="1-10" required>
+
+            <label for="PWAmaterial">Hoe moeilijk vond je de lesstof?</label>
+            <input type="number" min="1" max="10" name="PWAmaterial" id="PWAmaterial" placeholder="1-10" required><br />
+            <label for="PWAexplanation">Hoe duidelijk was de uitleg?</label>
+            <input type="number" min="1" max="10" name="PWAexplanation" id="PWAexplanation" placeholder="1-10" required><br />
+            <label for="PWAunderstanding">Hoe goed snap je het?</label>
+            <input type="number" min="1" max="10" name="PWAunderstanding" id="PWAunderstanding" placeholder="1-10" required>
         </fieldset>
         <fieldset>
             <h2>Browser Technologies</h2>
-            <label for="teacherName">Naam van docenten:</label>
-            <input type="text" name="" id="teacherName" required><br />
+            <label for="BTteacherName">Naam van docenten:</label>
+            <input type="text" name="BTteacherName" id="BTteacherName" required><br />
 
             <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="weken5" id="week1-3" value="1-3">
+            <input type="radio" name="BTweeks" id="week1-3" value="1-3">
             <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="weken5" id="week4-6" value="4-6">
+            <input type="radio" name="BTweeks" id="week4-6" value="4-6">
             <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="weken5" id="week7-9" value="7-9">
+            <input type="radio" name="BTweeks" id="week7-9" value="7-9">
             <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="weken5" id="week10-12" value="10-12">
+            <input type="radio" name="BTweeks" id="week10-12" value="10-12">
             <label for="week10-12">weken 10-12</label><br />
             
-            <label for="material">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="" id="material" placeholder="1-10" required><br />
-            <label for="explanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="" id="explanation" placeholder="1-10" required><br />
-            <label for="understanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="" id="understanding" placeholder="1-10" required>
+            <label for="BTmaterial">Hoe moeilijk vond je de lesstof?</label>
+            <input type="number" min="1" max="10" name="BTmaterial" id="BTmaterial" placeholder="1-10" required><br />
+            <label for="BTexplanation">Hoe duidelijk was de uitleg?</label>
+            <input type="number" min="1" max="10" name="BTexplanation" id="BTexplanation" placeholder="1-10" required><br />
+            <label for="BTunderstanding">Hoe goed snap je het?</label>
+            <input type="number" min="1" max="10" name="BTunderstanding" id="BTunderstanding" placeholder="1-10" required>
         </fieldset>
+        <fieldset>
+          <h2>Human Centered Design</h2>
+          <label for="HCDteacherName">Naam van docenten:</label>
+          <input type="text" name="HCDteacherName" id="HCDteacherName" required><br />
+
+          <p>In welke weken van de minor had je het vak?</p>
+          <input type="radio" name="HCDweeks" id="HCDweeks1-3" value="1-3">
+          <label for="week1-3">weken 1-3</label><br />
+          <input type="radio" name="HCDweeks" id="HCDweeks4-6" value="4-6">
+          <label for="week4-6">weken 4-6</label><br />
+          <input type="radio" name="HCDweeks" id="HCDweeks7-9" value="7-9">
+          <label for="week7-9">weken 7-9</label><br />
+          <input type="radio" name="HCDweeks" id="HCDweeks10-12" value="10-12">
+          <label for="week10-12">weken 10-12</label><br />
+
+          <label for="HCDmaterial">Hoe moeilijk vond je de lesstof?</label>
+          <input type="number" min="1" max="10" name="HCDmaterial" id="HCDmaterial" placeholder="1-10" required><br />
+          <label for="HCDexplanation">Hoe duidelijk was de uitleg?</label>
+          <input type="number" min="1" max="10" name="HCDexplanation" id="HCDexplanation" placeholder="1-10" required><br />
+          <label for="HCDunderstanding">Hoe goed snap je het?</label>
+          <input type="number" min="1" max="10" name="HCDunderstanding" id="HCDunderstanding" placeholder="1-10" required>
+      </fieldset>
+      <fieldset>
+        <h2>Realtime Web</h2>
+
+          <label for="RWteacherName">Naam van docenten:</label>
+          <input type="text" name="RWteacherName" id="RWteacherName" required><br />
+
+          <p>In welke weken van de minor had je het vak?</p>
+          <input type="radio" name="RWweeks" id="RWweeks1-3" value="1-3">
+          <label for="week1-3">weken 1-3</label><br />
+          <input type="radio" name="RWweeks" id="RWweeks4-6" value="4-6">
+          <label for="week4-6">weken 4-6</label><br />
+          <input type="radio" name="RWweeks" id="RWweeks7-9" value="7-9">
+          <label for="week7-9">weken 7-9</label><br />
+          <input type="radio" name="RWweeks" id="RWweeks10-12" value="10-12">
+          <label for="week10-12">weken 10-12</label><br />
+
+          <label for="RWmaterial">Hoe moeilijk vond je de lesstof?</label>
+          <input type="number" min="1" max="10" name="RWmaterial" id="RWmaterial" placeholder="1-10" required><br />
+          <label for="RWexplanation">Hoe duidelijk was de uitleg?</label>
+          <input type="number" min="1" max="10" name="RWexplanation" id="RWexplanation" placeholder="1-10" required><br />
+          <label for="RWunderstanding">Hoe goed snap je het?</label>
+          <input type="number" min="1" max="10" name="RWunderstanding" id="RWunderstanding" placeholder="1-10" required>
+      </fieldset> -->
+      <button type="submit">Verstuur</button>
     </form>
-    <button type="submit">Verstuur</button>
   </body>
 </html>
