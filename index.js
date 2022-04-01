@@ -1,17 +1,46 @@
-const express = require("express"); //Import the express dependency
-const app = express(); //Instantiate an express app, the main work horse of this server
-const port = 3000; //Save the port number where your server will be listening
+const express = require("express");
+const app = express();
+const port = 3000;
+const mongoose = require("mongoose");
+const Enquete = require("./models/enquete");
+const bodyParser = require("body-parser");
+// require("dotenv").config();
+const dbURL =
+  "mongodb+srv://admin:admin@browsert.cp33l.mongodb.net/BrowserTech?retryWrites=true&w=majority";
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-//Idiomatic expression in express to route and respond to a client request
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+//mongoose connect to db
+mongoose
+  .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log("Database connected!"))
+  .catch((err) => console.log(err));
+
 app.get("/", (req, res) => {
-  //get requests to the root ("/") will route here
   res.render("home");
 });
 
+// send enquete to db
+// redirect naar /
+app.post("/", (req, res) => {
+  const enquete = new Enquete(req.body);
+
+  console.log(req.body);
+
+  enquete
+    .save()
+    .then((result) => {
+      res.redirect("/");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 app.listen(port, () => {
-  //server starts listening for any attempts from a client to connect at port: {port}
   console.log(`Now listening on port ${port}`);
 });
