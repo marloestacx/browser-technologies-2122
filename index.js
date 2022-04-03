@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 const mongoose = require("mongoose");
 const Enquete = require("./models/enquete");
 const bodyParser = require("body-parser");
-// require("dotenv").config();
+require("dotenv").config();
 const dbURL =
   "mongodb+srv://admin:admin@browsert.cp33l.mongodb.net/BrowserTech?retryWrites=true&w=majority";
 
