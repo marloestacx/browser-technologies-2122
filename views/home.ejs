@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <script src="/scripts/script.js"></script>
-  </head>
+  <%- include('./components/head.ejs') -%> 
   <body>
     <header><h1>Enquete</h1></header>
     <form action="/" method="POST">
@@ -25,6 +18,7 @@
             <label for="WAFSteacherName">Naam van docenten:</label><br/>
             <input type="text" name="WAFSteacherName" id="WAFSteacherName" required><br />
             
+            <div>
             <label>In welke weken van de minor had je het vak?</label><br/>
             <input type="radio" name="WAFSweeks" id="WAFSweeks1-3" value="1-3">
             <label for="week1-3">weken 1-3</label><br />
@@ -34,9 +28,9 @@
             <label for="week7-9">weken 7-9</label><br />
             <input type="radio" name="WAFSweeks" id="WAFSweeks10-12" value="10-12">
             <label for="week10-12">weken 10-12</label><br />
-
+          </div>
+          <div>
             <label for="WAFSmaterial">Hoe moeilijk vond je de lesstof?</label><br/>
-            <!-- <input type="number" min="1" max="10" name="WAFSmaterial" id="WAFSmaterial" placeholder="1-10" required><br /> -->
             <input type="radio" name="WAFSmaterial" id="WAFSmaterial1" value="1">
             <label for="WAFSmaterial1">1</label>
             <input type="radio" name="WAFSmaterial" id="WAFSmaterial2" value="2">
@@ -58,9 +52,10 @@
             <input type="radio" name="WAFSmaterial" id="WAFSmaterial10" value="10">
             <label for="WAFSmaterial10">10</label><br/>
             
+          </div>
 
-            <label for="WAFSexplanation">Hoe duidelijk was de uitleg?</label>
-            <!-- <input type="number" min="1" max="10" name="WAFSexplanation" id="WAFSexplanation" placeholder="1-10" required><br /> -->
+          <div>
+            <label for="WAFSexplanation">Hoe duidelijk was de uitleg?</label><br/>
             <input type="radio" name="WAFSexplanation" id="WAFSexplanation1" value="1">
             <label for="WAFSexplanation1">1</label>
             <input type="radio" name="WAFSexplanation" id="WAFSexplanation2" value="2">
@@ -81,9 +76,10 @@
             <label for="WAFSexplanation9">9</label>
             <input type="radio" name="WAFSexplanation" id="WAFSexplanation10" value="10">
             <label for="WAFSexplanation10">10</label><br/>
+          </div>
+          <div>
 
-
-            <label for="WAFSunderstanding">Hoe goed snap je het?</label>
+            <label for="WAFSunderstanding">Hoe goed snap je het?</label><br/>
             <input type="radio" name="WAFSunderstanding" id="WAFSunderstanding1" value="1">
             <label for="WAFSunderstanding1">1</label>
             <input type="radio" name="WAFSunderstanding" id="WAFSunderstanding2" value="2">
@@ -104,120 +100,464 @@
             <label for="WAFSunderstanding9">9</label>
             <input type="radio" name="WAFSunderstanding" id="WAFSunderstanding10" value="10">
             <label for="WAFSunderstanding10">10</label><br/>
+          </div>
         </fieldset>
-        <!-- <fieldset>
-            <h2>CSS To The Rescue</h2>
-            <label for="CSSteacherName">Naam van docenten:</label>
-            <input type="text" name="CSSteacherName" id="CSSteacherName" required><br />
 
-            <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="CSSweeks" id="CSSweeks1-3" value="1-3">
-            <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="CSSweeks" id="CSSweeks4-6" value="4-6">
-            <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="CSSweeks" id="CSSweeks7-9" value="7-9">
-            <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="CSSweeks" id="CSSweeks10-12" value="10-12">
-            <label for="week10-12">weken 10-12</label><br />
 
-            <label for="CSSmaterial">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="CSSmaterial" id="CSSmaterial" placeholder="1-10" required><br />
-            <label for="CSSexplanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="CSSexplanation" id="CSSexplanation" placeholder="1-10" required><br />
-            <label for="CSSunderstanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="CSSunderstanding" id="CSSunderstanding" placeholder="1-10" required>
-        </fieldset>
-       
+        
         <fieldset>
+          <h2>CSS To The Rescue</h2>
+               <label for="CSSteacherName">Naam van docenten:</label><br/>
+               <input type="text" name="CSSteacherName" id="CSSteacherName" required><br />
+               
+               <div>
+               <label>In welke weken van de minor had je het vak?</label><br/>
+               <input type="radio" name="CSSweeks" id="CSSweeks1-3" value="1-3">
+               <label for="week1-3">weken 1-3</label><br />
+               <input type="radio" name="CSSweeks" id="CSSweeks4-6" value="4-6">
+               <label for="week4-6">weken 4-6</label><br />
+               <input type="radio" name="CSSweeks" id="CSSweeks7-9" value="7-9">
+               <label for="week7-9">weken 7-9</label><br />
+               <input type="radio" name="CSSweeks" id="CSSweeks10-12" value="10-12">
+               <label for="week10-12">weken 10-12</label><br />
+             </div>
+             <div>
+               <label for="CSSmaterial">Hoe moeilijk vond je de lesstof?</label><br/>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial1" value="1">
+               <label for="CSSmaterial1">1</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial2" value="2">
+               <label for="CSSmaterial2">2</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial3" value="3">
+               <label for="CSSmaterial3">3</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial4" value="4">
+               <label for="CSSmaterial4">4</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial5" value="5">
+               <label for="CSSmaterial5">5</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial6" value="6">
+               <label for="CSSmaterial6">6</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial7" value="7">
+               <label for="CSSmaterial7">7</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial8" value="8">
+               <label for="CSSmaterial8">8</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial9" value="9">
+               <label for="CSSmaterial9">9</label>
+               <input type="radio" name="CSSmaterial" id="CSSmaterial10" value="10">
+               <label for="CSSmaterial10">10</label><br/>
+               
+             </div>
+      
+             <div>
+               <label for="CSSexplanation">Hoe duidelijk was de uitleg?</label><br/>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation1" value="1">
+               <label for="CSSexplanation1">1</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation2" value="2">
+               <label for="CSSexplanation2">2</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation3" value="3">
+               <label for="CSSexplanation3">3</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation4" value="4">
+               <label for="CSSexplanation4">4</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation5" value="5">
+               <label for="CSSexplanation5">5</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation6" value="6">
+               <label for="CSSexplanation6">6</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation7" value="7">
+               <label for="CSSexplanation7">7</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation8" value="8">
+               <label for="CSSexplanation8">8</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation9" value="9">
+               <label for="CSSexplanation9">9</label>
+               <input type="radio" name="CSSexplanation" id="CSSexplanation10" value="10">
+               <label for="CSSexplanation10">10</label><br/>
+             </div>
+             <div>
+      
+               <label for="CSSunderstanding">Hoe goed snap je het?</label><br/>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding1" value="1">
+               <label for="CSSunderstanding1">1</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding2" value="2">
+               <label for="CSSunderstanding2">2</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding3" value="3">
+               <label for="CSSunderstanding3">3</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding4" value="4">
+               <label for="CSSunderstanding4">4</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding5" value="5">
+               <label for="CSSunderstanding5">5</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding6" value="6">
+               <label for="CSSunderstanding6">6</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding7" value="7">
+               <label for="CSSunderstanding7">7</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding8" value="8">
+               <label for="CSSunderstanding8">8</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding9" value="9">
+               <label for="CSSunderstanding9">9</label>
+               <input type="radio" name="CSSunderstanding" id="CSSunderstanding10" value="10">
+               <label for="CSSunderstanding10">10</label><br/>
+             </div>
+           </fieldset>
+
+
+           <fieldset>
             <h2>Progressive Web Apps</h2>
-            <p>In welke weken van de minor had je het vak?</p>
-            <label for="PWAteacherName">Naam van docenten:</label>
-            <input type="text" name="PWAteacherName" id="PWAteacherName" required><br />
+                 <label for="PWAteacherName">Naam van docenten:</label><br/>
+                 <input type="text" name="PWAteacherName" id="PWAteacherName" required><br />
+                 
+                 <div>
+                 <label>In welke weken van de minor had je het vak?</label><br/>
+                 <input type="radio" name="PWAweeks" id="PWAweeks1-3" value="1-3">
+                 <label for="week1-3">weken 1-3</label><br />
+                 <input type="radio" name="PWAweeks" id="PWAweeks4-6" value="4-6">
+                 <label for="week4-6">weken 4-6</label><br />
+                 <input type="radio" name="PWAweeks" id="PWAweeks7-9" value="7-9">
+                 <label for="week7-9">weken 7-9</label><br />
+                 <input type="radio" name="PWAweeks" id="PWAweeks10-12" value="10-12">
+                 <label for="week10-12">weken 10-12</label><br />
+               </div>
+               <div>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial1" value="1">
+                 <label for="PWAmaterial1">1</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial2" value="2">
+                 <label for="PWAmaterial2">2</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial3" value="3">
+                 <label for="PWAmaterial3">3</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial4" value="4">
+                 <label for="PWAmaterial4">4</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial5" value="5">
+                 <label for="PWAmaterial5">5</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial6" value="6">
+                 <label for="PWAmaterial6">6</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial7" value="7">
+                 <label for="PWAmaterial7">7</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial8" value="8">
+                 <label for="PWAmaterial8">8</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial9" value="9">
+                 <label for="PWAmaterial9">9</label>
+                 <input type="radio" name="PWAmaterial" id="PWAmaterial10" value="10">
+                 <label for="PWAmaterial10">10</label><br/>
+                 
+               </div>
+        
+               <div>
+                 <label for="PWAexplanation">Hoe duidelijk was de uitleg?</label><br/>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation1" value="1">
+                 <label for="PWAexplanation1">1</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation2" value="2">
+                 <label for="PWAexplanation2">2</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation3" value="3">
+                 <label for="PWAexplanation3">3</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation4" value="4">
+                 <label for="PWAexplanation4">4</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation5" value="5">
+                 <label for="PWAexplanation5">5</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation6" value="6">
+                 <label for="PWAexplanation6">6</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation7" value="7">
+                 <label for="PWAexplanation7">7</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation8" value="8">
+                 <label for="PWAexplanation8">8</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation9" value="9">
+                 <label for="PWAexplanation9">9</label>
+                 <input type="radio" name="PWAexplanation" id="PWAexplanation10" value="10">
+                 <label for="PWAexplanation10">10</label><br/>
+               </div>
+               <div>
+        
+                 <label for="PWAunderstanding">Hoe goed snap je het?</label><br/>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding1" value="1">
+                 <label for="PWAunderstanding1">1</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding2" value="2">
+                 <label for="PWAunderstanding2">2</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding3" value="3">
+                 <label for="PWAunderstanding3">3</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding4" value="4">
+                 <label for="PWAunderstanding4">4</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding5" value="5">
+                 <label for="PWAunderstanding5">5</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding6" value="6">
+                 <label for="PWAunderstanding6">6</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding7" value="7">
+                 <label for="PWAunderstanding7">7</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding8" value="8">
+                 <label for="PWAunderstanding8">8</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding9" value="9">
+                 <label for="PWAunderstanding9">9</label>
+                 <input type="radio" name="PWAunderstanding" id="PWAunderstanding10" value="10">
+                 <label for="PWAunderstanding10">10</label><br/>
+               </div>
+             </fieldset>
 
-            <input type="radio" name="PWAweeks" id="PWAweeks1-3" value="1-3">
-            <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="PWAweeks" id="PWAweeks4-6" value="4-6">
-            <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="PWAweeks" id="PWAweeks7-9" value="7-9">
-            <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="PWAweeks" id="PWAweeks10-12" value="10-12">
-            <label for="week10-12">weken 10-12</label><br />
 
-            <label for="PWAmaterial">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="PWAmaterial" id="PWAmaterial" placeholder="1-10" required><br />
-            <label for="PWAexplanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="PWAexplanation" id="PWAexplanation" placeholder="1-10" required><br />
-            <label for="PWAunderstanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="PWAunderstanding" id="PWAunderstanding" placeholder="1-10" required>
-        </fieldset>
-        <fieldset>
-            <h2>Browser Technologies</h2>
-            <label for="BTteacherName">Naam van docenten:</label>
-            <input type="text" name="BTteacherName" id="BTteacherName" required><br />
+             <fieldset>
+              <h2>Browser Technologies</h2>
+                   <label for="BTteacherName">Naam van docenten:</label><br/>
+                   <input type="text" name="BTteacherName" id="BTteacherName" required><br />
+                   
+                   <div>
+                   <label>In welke weken van de minor had je het vak?</label><br/>
+                   <input type="radio" name="BTweeks" id="BTweeks1-3" value="1-3">
+                   <label for="week1-3">weken 1-3</label><br />
+                   <input type="radio" name="BTweeks" id="BTweeks4-6" value="4-6">
+                   <label for="week4-6">weken 4-6</label><br />
+                   <input type="radio" name="BTweeks" id="BTweeks7-9" value="7-9">
+                   <label for="week7-9">weken 7-9</label><br />
+                   <input type="radio" name="BTweeks" id="BTweeks10-12" value="10-12">
+                   <label for="week10-12">weken 10-12</label><br />
+                 </div>
+                 <div>
+                   <label for="BTmaterial">Hoe moeilijk vond je de lesstof?</label><br/>
+                   <input type="radio" name="BTmaterial" id="BTmaterial1" value="1">
+                   <label for="BTmaterial1">1</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial2" value="2">
+                   <label for="BTmaterial2">2</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial3" value="3">
+                   <label for="BTmaterial3">3</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial4" value="4">
+                   <label for="BTmaterial4">4</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial5" value="5">
+                   <label for="BTmaterial5">5</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial6" value="6">
+                   <label for="BTmaterial6">6</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial7" value="7">
+                   <label for="BTmaterial7">7</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial8" value="8">
+                   <label for="BTmaterial8">8</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial9" value="9">
+                   <label for="BTmaterial9">9</label>
+                   <input type="radio" name="BTmaterial" id="BTmaterial10" value="10">
+                   <label for="BTmaterial10">10</label><br/>
+                   
+                 </div>
+          
+                 <div>
+                   <label for="BTexplanation">Hoe duidelijk was de uitleg?</label><br/>
+                   <input type="radio" name="BTexplanation" id="BTexplanation1" value="1">
+                   <label for="BTexplanation1">1</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation2" value="2">
+                   <label for="BTexplanation2">2</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation3" value="3">
+                   <label for="BTexplanation3">3</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation4" value="4">
+                   <label for="BTexplanation4">4</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation5" value="5">
+                   <label for="BTexplanation5">5</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation6" value="6">
+                   <label for="BTexplanation6">6</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation7" value="7">
+                   <label for="BTexplanation7">7</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation8" value="8">
+                   <label for="BTexplanation8">8</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation9" value="9">
+                   <label for="BTexplanation9">9</label>
+                   <input type="radio" name="BTexplanation" id="BTexplanation10" value="10">
+                   <label for="BTexplanation10">10</label><br/>
+                 </div>
+                 <div>
+          
+                   <label for="BTunderstanding">Hoe goed snap je het?</label><br/>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding1" value="1">
+                   <label for="BTunderstanding1">1</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding2" value="2">
+                   <label for="BTunderstanding2">2</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding3" value="3">
+                   <label for="BTunderstanding3">3</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding4" value="4">
+                   <label for="BTunderstanding4">4</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding5" value="5">
+                   <label for="BTunderstanding5">5</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding6" value="6">
+                   <label for="BTunderstanding6">6</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding7" value="7">
+                   <label for="BTunderstanding7">7</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding8" value="8">
+                   <label for="BTunderstanding8">8</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding9" value="9">
+                   <label for="BTunderstanding9">9</label>
+                   <input type="radio" name="BTunderstanding" id="BTunderstanding10" value="10">
+                   <label for="BTunderstanding10">10</label><br/>
+                 </div>
+               </fieldset>
 
-            <p>In welke weken van de minor had je het vak?</p>
-            <input type="radio" name="BTweeks" id="week1-3" value="1-3">
-            <label for="week1-3">weken 1-3</label><br />
-            <input type="radio" name="BTweeks" id="week4-6" value="4-6">
-            <label for="week4-6">weken 4-6</label><br />
-            <input type="radio" name="BTweeks" id="week7-9" value="7-9">
-            <label for="week7-9">weken 7-9</label><br />
-            <input type="radio" name="BTweeks" id="week10-12" value="10-12">
-            <label for="week10-12">weken 10-12</label><br />
+               <fieldset>
+                <h2>Human Centered Design</h2>
+                     <label for="HCDteacherName">Naam van docenten:</label><br/>
+                     <input type="text" name="HCDteacherName" id="HCDteacherName" required><br />
+                     
+                     <div>
+                     <label>In welke weken van de minor had je het vak?</label><br/>
+                     <input type="radio" name="HCDweeks" id="HCDweeks1-3" value="1-3">
+                     <label for="week1-3">weken 1-3</label><br />
+                     <input type="radio" name="HCDweeks" id="HCDweeks4-6" value="4-6">
+                     <label for="week4-6">weken 4-6</label><br />
+                     <input type="radio" name="HCDweeks" id="HCDweeks7-9" value="7-9">
+                     <label for="week7-9">weken 7-9</label><br />
+                     <input type="radio" name="HCDweeks" id="HCDweeks10-12" value="10-12">
+                     <label for="week10-12">weken 10-12</label><br />
+                   </div>
+                   <div>
+                     <label for="HCDmaterial">Hoe moeilijk vond je de lesstof?</label><br/>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial1" value="1">
+                     <label for="HCDmaterial1">1</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial2" value="2">
+                     <label for="HCDmaterial2">2</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial3" value="3">
+                     <label for="HCDmaterial3">3</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial4" value="4">
+                     <label for="HCDmaterial4">4</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial5" value="5">
+                     <label for="HCDmaterial5">5</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial6" value="6">
+                     <label for="HCDmaterial6">6</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial7" value="7">
+                     <label for="HCDmaterial7">7</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial8" value="8">
+                     <label for="HCDmaterial8">8</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial9" value="9">
+                     <label for="HCDmaterial9">9</label>
+                     <input type="radio" name="HCDmaterial" id="HCDmaterial10" value="10">
+                     <label for="HCDmaterial10">10</label><br/>
+                     
+                   </div>
             
-            <label for="BTmaterial">Hoe moeilijk vond je de lesstof?</label>
-            <input type="number" min="1" max="10" name="BTmaterial" id="BTmaterial" placeholder="1-10" required><br />
-            <label for="BTexplanation">Hoe duidelijk was de uitleg?</label>
-            <input type="number" min="1" max="10" name="BTexplanation" id="BTexplanation" placeholder="1-10" required><br />
-            <label for="BTunderstanding">Hoe goed snap je het?</label>
-            <input type="number" min="1" max="10" name="BTunderstanding" id="BTunderstanding" placeholder="1-10" required>
-        </fieldset>
-        <fieldset>
-          <h2>Human Centered Design</h2>
-          <label for="HCDteacherName">Naam van docenten:</label>
-          <input type="text" name="HCDteacherName" id="HCDteacherName" required><br />
+                   <div>
+                     <label for="HCDexplanation">Hoe duidelijk was de uitleg?</label><br/>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation1" value="1">
+                     <label for="HCDexplanation1">1</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation2" value="2">
+                     <label for="HCDexplanation2">2</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation3" value="3">
+                     <label for="HCDexplanation3">3</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation4" value="4">
+                     <label for="HCDexplanation4">4</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation5" value="5">
+                     <label for="HCDexplanation5">5</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation6" value="6">
+                     <label for="HCDexplanation6">6</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation7" value="7">
+                     <label for="HCDexplanation7">7</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation8" value="8">
+                     <label for="HCDexplanation8">8</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation9" value="9">
+                     <label for="HCDexplanation9">9</label>
+                     <input type="radio" name="HCDexplanation" id="HCDexplanation10" value="10">
+                     <label for="HCDexplanation10">10</label><br/>
+                   </div>
+                   <div>
+            
+                     <label for="HCDunderstanding">Hoe goed snap je het?</label><br/>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding1" value="1">
+                     <label for="HCDunderstanding1">1</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding2" value="2">
+                     <label for="HCDunderstanding2">2</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding3" value="3">
+                     <label for="HCDunderstanding3">3</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding4" value="4">
+                     <label for="HCDunderstanding4">4</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding5" value="5">
+                     <label for="HCDunderstanding5">5</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding6" value="6">
+                     <label for="HCDunderstanding6">6</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding7" value="7">
+                     <label for="HCDunderstanding7">7</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding8" value="8">
+                     <label for="HCDunderstanding8">8</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding9" value="9">
+                     <label for="HCDunderstanding9">9</label>
+                     <input type="radio" name="HCDunderstanding" id="HCDunderstanding10" value="10">
+                     <label for="HCDunderstanding10">10</label><br/>
+                   </div>
+                 </fieldset>
+                 
+                 
+                 <fieldset>
+                  <h2>Realtime Web</h2>
+                       <label for="TWteacherName">Naam van docenten:</label><br/>
+                       <input type="text" name="TWteacherName" id="TWteacherName" required><br />
+                       
+                       <div>
+                       <label>In welke weken van de minor had je het vak?</label><br/>
+                       <input type="radio" name="TWweeks" id="TWweeks1-3" value="1-3">
+                       <label for="week1-3">weken 1-3</label><br />
+                       <input type="radio" name="TWweeks" id="TWweeks4-6" value="4-6">
+                       <label for="week4-6">weken 4-6</label><br />
+                       <input type="radio" name="TWweeks" id="TWweeks7-9" value="7-9">
+                       <label for="week7-9">weken 7-9</label><br />
+                       <input type="radio" name="TWweeks" id="TWweeks10-12" value="10-12">
+                       <label for="week10-12">weken 10-12</label><br />
+                     </div>
+                     <div>
+                       <label for="TWmaterial">Hoe moeilijk vond je de lesstof?</label><br/>
+                       <input type="radio" name="TWmaterial" id="TWmaterial1" value="1">
+                       <label for="TWmaterial1">1</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial2" value="2">
+                       <label for="TWmaterial2">2</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial3" value="3">
+                       <label for="TWmaterial3">3</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial4" value="4">
+                       <label for="TWmaterial4">4</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial5" value="5">
+                       <label for="TWmaterial5">5</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial6" value="6">
+                       <label for="TWmaterial6">6</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial7" value="7">
+                       <label for="TWmaterial7">7</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial8" value="8">
+                       <label for="TWmaterial8">8</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial9" value="9">
+                       <label for="TWmaterial9">9</label>
+                       <input type="radio" name="TWmaterial" id="TWmaterial10" value="10">
+                       <label for="TWmaterial10">10</label><br/>
+                       
+                     </div>
+              
+                     <div>
+                       <label for="TWexplanation">Hoe duidelijk was de uitleg?</label><br/>
+                       <input type="radio" name="TWexplanation" id="TWexplanation1" value="1">
+                       <label for="TWexplanation1">1</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation2" value="2">
+                       <label for="TWexplanation2">2</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation3" value="3">
+                       <label for="TWexplanation3">3</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation4" value="4">
+                       <label for="TWexplanation4">4</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation5" value="5">
+                       <label for="TWexplanation5">5</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation6" value="6">
+                       <label for="TWexplanation6">6</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation7" value="7">
+                       <label for="TWexplanation7">7</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation8" value="8">
+                       <label for="TWexplanation8">8</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation9" value="9">
+                       <label for="TWexplanation9">9</label>
+                       <input type="radio" name="TWexplanation" id="TWexplanation10" value="10">
+                       <label for="TWexplanation10">10</label><br/>
+                     </div>
+                     <div>
+              
+                       <label for="TWunderstanding">Hoe goed snap je het?</label><br/>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding1" value="1">
+                       <label for="TWunderstanding1">1</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding2" value="2">
+                       <label for="TWunderstanding2">2</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding3" value="3">
+                       <label for="TWunderstanding3">3</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding4" value="4">
+                       <label for="TWunderstanding4">4</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding5" value="5">
+                       <label for="TWunderstanding5">5</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding6" value="6">
+                       <label for="TWunderstanding6">6</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding7" value="7">
+                       <label for="TWunderstanding7">7</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding8" value="8">
+                       <label for="TWunderstanding8">8</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding9" value="9">
+                       <label for="TWunderstanding9">9</label>
+                       <input type="radio" name="TWunderstanding" id="TWunderstanding10" value="10">
+                       <label for="TWunderstanding10">10</label><br/>
+                     </div>
+                   </fieldset>   
 
-          <p>In welke weken van de minor had je het vak?</p>
-          <input type="radio" name="HCDweeks" id="HCDweeks1-3" value="1-3">
-          <label for="week1-3">weken 1-3</label><br />
-          <input type="radio" name="HCDweeks" id="HCDweeks4-6" value="4-6">
-          <label for="week4-6">weken 4-6</label><br />
-          <input type="radio" name="HCDweeks" id="HCDweeks7-9" value="7-9">
-          <label for="week7-9">weken 7-9</label><br />
-          <input type="radio" name="HCDweeks" id="HCDweeks10-12" value="10-12">
-          <label for="week10-12">weken 10-12</label><br />
-
-          <label for="HCDmaterial">Hoe moeilijk vond je de lesstof?</label>
-          <input type="number" min="1" max="10" name="HCDmaterial" id="HCDmaterial" placeholder="1-10" required><br />
-          <label for="HCDexplanation">Hoe duidelijk was de uitleg?</label>
-          <input type="number" min="1" max="10" name="HCDexplanation" id="HCDexplanation" placeholder="1-10" required><br />
-          <label for="HCDunderstanding">Hoe goed snap je het?</label>
-          <input type="number" min="1" max="10" name="HCDunderstanding" id="HCDunderstanding" placeholder="1-10" required>
-      </fieldset>
-      <fieldset>
-        <h2>Realtime Web</h2>
-
-          <label for="RWteacherName">Naam van docenten:</label>
-          <input type="text" name="RWteacherName" id="RWteacherName" required><br />
-
-          <p>In welke weken van de minor had je het vak?</p>
-          <input type="radio" name="RWweeks" id="RWweeks1-3" value="1-3">
-          <label for="week1-3">weken 1-3</label><br />
-          <input type="radio" name="RWweeks" id="RWweeks4-6" value="4-6">
-          <label for="week4-6">weken 4-6</label><br />
-          <input type="radio" name="RWweeks" id="RWweeks7-9" value="7-9">
-          <label for="week7-9">weken 7-9</label><br />
-          <input type="radio" name="RWweeks" id="RWweeks10-12" value="10-12">
-          <label for="week10-12">weken 10-12</label><br />
-
-          <label for="RWmaterial">Hoe moeilijk vond je de lesstof?</label>
-          <input type="number" min="1" max="10" name="RWmaterial" id="RWmaterial" placeholder="1-10" required><br />
-          <label for="RWexplanation">Hoe duidelijk was de uitleg?</label>
-          <input type="number" min="1" max="10" name="RWexplanation" id="RWexplanation" placeholder="1-10" required><br />
-          <label for="RWunderstanding">Hoe goed snap je het?</label>
-          <input type="number" min="1" max="10" name="RWunderstanding" id="RWunderstanding" placeholder="1-10" required>
-      </fieldset> -->
-      <button type="submit">Verstuur</button>
+      <button type="submit" onclick="clearItems()">Verstuur</button>
     </form>
   </body>
 </html>
