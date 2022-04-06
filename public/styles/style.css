@@ -1,6 +1,16 @@
 body {
-  background-color: lightblue;
+  background: radial-gradient(
+    circle,
+    rgba(247, 181, 146, 1) 0%,
+    rgba(214, 95, 117, 1) 100%
+  );
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@supports not (background: radial-gradient()) {
+  body {
+    background-color: #d65f75;
+  }
 }
 
 form {
@@ -19,8 +29,12 @@ legend {
 }
 
 fieldset {
+  align-self: center;
+  border-radius: 15px;
+  width: 60vw;
+  margin-bottom: 1em;
   border: none;
-  background-color: lightcyan;
+  background-color: #f4f5f7;
 }
 
 button {
@@ -29,7 +43,9 @@ button {
   padding: 1em;
   text-align: center;
   text-decoration: none;
-  background-color: #4caf50;
+  background-color: #377e3a;
+  font-size: 12pt;
+  align-self: flex-end;
   margin: 1em;
   cursor: pointer;
 }
