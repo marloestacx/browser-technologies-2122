@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 // send enquete to db
-// redirect naar /
+// redirect naar send page
 app.post("/", (req, res) => {
   const enquete = new Enquete(req.body);
 
@@ -43,9 +43,9 @@ app.post("/", (req, res) => {
     });
 });
 
-// offline page
+// send page
 app.get("/send", (req, res) => {
-  res.render("send", {});
+  res.render("send");
 });
 
 app.listen(port, () => {
