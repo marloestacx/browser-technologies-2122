@@ -36,11 +36,16 @@ app.post("/", (req, res) => {
   enquete
     .save()
     .then((result) => {
-      res.redirect("/");
+      res.redirect("/send");
     })
     .catch((err) => {
       console.log(err);
     });
+});
+
+// offline page
+app.get("/send", (req, res) => {
+  res.render("send", {});
 });
 
 app.listen(port, () => {
