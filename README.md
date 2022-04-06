@@ -27,10 +27,6 @@ CSS - With CSS I added some styling to the website
 JavaScript - With JavaScript the page saves your progress
 
 
-### Insights
-
-During this project I gained several insights regarding the application of progressive enhancement. You can read about this [here](https://github.com/lottekoblens/browser-technologies-2122/wiki/Inzichten).
-
 ## Features
 
 You can fill in the enquete en submit it. Your answers will be saved and you can complete the enquete the next time you visit the website.
