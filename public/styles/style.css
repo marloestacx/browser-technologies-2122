@@ -1,5 +1,21 @@
 body {
   background-color: lightblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+@supports not (display: flex) {
+  form {
+    float: center;
+  }
+}
+
+legend {
+  font-size: 16pt;
 }
 
 fieldset {
@@ -13,8 +29,17 @@ button {
   padding: 1em;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   background-color: #4caf50;
   margin: 1em;
   cursor: pointer;
+}
+
+input {
+  margin: 0.5em 0 1em 0;
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+fieldset div {
+  margin-bottom: 1em;
 }
