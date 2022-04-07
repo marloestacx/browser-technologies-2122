@@ -1,6 +1,6 @@
 # Enquête
 
-Complete a survey about the minor
+Complete a survey about the minor Web Design & Development
 
 ## Table of contents
 
@@ -16,7 +16,17 @@ Complete a survey about the minor
 
 ## Concept
 
-The user can fill in a survey about the minor web design, when he leaves the page his progress will be saved and he can later continue where he left off. The user can also see the answers of the survey.
+The user can fill in a survey about the minor Web Design & Development, when he leaves the page his progress will be saved, and he can later continue where he left off. The user can also see the answers of the survey.
+
+Survey page
+![homebt](https://user-images.githubusercontent.com/24413936/162255025-c435b243-077d-4348-9f42-8c6dc8b59537.png)
+
+Result page
+![download](https://user-images.githubusercontent.com/24413936/162255050-624d8b15-9bd6-48e0-a5d3-b354ac1173bd.png)
+
+Answer page
+![anwsersbt](https://user-images.githubusercontent.com/24413936/162255043-cdb98dee-320a-42cc-a85e-c4cc63bee737.png)
+
 
 ## User Story
 
@@ -24,33 +34,46 @@ I want to be able to fill in a survey about the minor Web Development, with diff
 
 ## Wireflow
 
+![wireflow](https://user-images.githubusercontent.com/24413936/162256673-dd93b952-d9b0-49b9-bf6b-d8de72303bcd.png)
+
+
 ## Progressive Enhancement
 
-HTML - The core part of this website is a form which is built with HTML
-CSS - With CSS I added some styling to the website
-JavaScript - With JavaScript the page saves your progress
+- HTML: The core part of this website is a form which is built with HTML. You can always fill in and submit the survey and see your results.
+- CSS: With CSS I added some styling to the website, this makes the website prettier and more pleasant to use. 
+- JavaScript: With JavaScript the page saves your progress, this makes the website even better to use.
+
+Only HTML
+![cssoff](https://user-images.githubusercontent.com/24413936/162254876-26b6a0bf-df06-475a-bce7-3fee7513115c.png)
+
+With CSS
+![homebt](https://user-images.githubusercontent.com/24413936/162254890-9a776172-959a-415c-ac32-1de6fe2bb16a.png)
+
+With JavaScript
+
+![gifjs](https://user-images.githubusercontent.com/24413936/162258203-d2044f7d-35b6-4704-895c-18192b69fd9d.gif)
 
 ## Features
 
-You can fill in the enquete en submit it. Your answers will be saved and you can complete the enquete the next time you visit the website.
+You can fill in the survey and submit it. Your answers will be saved, and you can complete the survey the next time you visit the website.
 
 ## Testing
 
 ### Google Chrome Desktop
 
-In this browser the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in your answers will be saved for the next time. When turning off JavaScript you can still fill in the survey and see the answers but your answers will no longer be saved.
+In this browser, the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in, your answers will be saved for the next time. When turning off JavaScript you can still fill in the survey and see the answers, but your answers will no longer be saved.
 
 ### Safari Desktop
 
-On Safari Desktop the website works perfectly, just like on Chrome you can fill in the survey and see the results. When you close the page your progress get's saved automatically in the local storage. When JavaScript is turned off you can still fill in the survey and submit it but your progress will no longer be saved automatically.
+On Safari Desktop the website works perfectly, just like on Chrome you can fill in the survey and see the results. When you close the page, your progress gets saved automatically in the local storage. When JavaScript is turned off, you can still fill in the survey and submit it, but your progress will no longer be saved automatically.
 
 ## Safari iPhone 13
 
-In this browser the website works. You can fill in the survey and see the results. Saving your process when filling in the survey doesn't work.
+In this browser, the website works. You can fill in the survey and see the results. Saving your process when filling in the survey doesn't work.
 
 ## Android 11 OnePlus 7T Pro
 
-In this browser the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in your answers will be saved for the next time.
+In this browser, the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in, your answers will be saved for the next time.
 
 ## Installation
 
