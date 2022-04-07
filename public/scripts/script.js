@@ -11,19 +11,19 @@ const getValues = () => {
 
   //text fields
   inputs.forEach((input) => {
-    const item = window.localStorage.getItem(input.name);
+    const item = localStorage.getItem(input.name);
     if (item) input.value = item;
   });
 
   // text fields
   inputNumber.forEach((input) => {
-    const item = window.localStorage.getItem(input.name);
+    const item = localStorage.getItem(input.name);
     if (item) input.value = item;
   });
 
   // radio buttons
   inputRadio.forEach((input) => {
-    const item = window.localStorage.getItem(input.name);
+    const item = localStorage.getItem(input.name);
     if (item) input.value = item;
     document.getElementById(input.name + item).checked = true;
   });
@@ -39,16 +39,16 @@ window.onbeforeunload = function () {
 
   // save radio buttons
   inputRadio.forEach((input) => {
-    window.localStorage.setItem(input.name, input.value);
+    localStorage.setItem(input.name, input.value);
   });
 
   // save text fields
   inputs.forEach((input) => {
-    window.localStorage.setItem(input.name, input.value);
+    localStorage.setItem(input.name, input.value);
   });
 
   // save number fields
   inputNumber.forEach((input) => {
-    window.localStorage.setItem(input.name, input.value);
+    localStorage.setItem(input.name, input.value);
   });
 };
