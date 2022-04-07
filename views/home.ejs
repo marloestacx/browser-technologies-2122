@@ -2,7 +2,12 @@
 <html lang="en">
   <%- include('./components/head.ejs') -%>
   <body>
-    <header><h1>Enquete</h1></header>
+    <header>
+      <a href="/">
+        <h1>Enquête Minor Web Development</h1>
+      </a>
+      <a href="/result">Antwoorden</a>
+    </header>
     <form action="/" method="POST">
       <fieldset>
         <legend>Student</legend>
@@ -261,7 +266,7 @@
           <label for="WAFSunderstanding10">10</label><br />
         </div>
       </fieldset>
-
+      <!-- 
       <fieldset>
         <h2>CSS To The Rescue</h2>
         <label for="CSSteacherName">Naam van docenten:</label><br />
@@ -1065,199 +1070,200 @@
         </div>
       </fieldset>
 
-      <fieldset>
-        <h2>Realtime Web</h2>
-        <label for="TWteacherName">Naam van docenten:</label><br />
-        <input
-          type="text"
-          name="TWteacherName"
-          id="TWteacherName"
-          required
-        /><br />
+      
+<fieldset>
+    <h2>Realtime Web</h2>
+    <label for="RWteacherName">Naam van docenten:</label><br />
+    <input
+      type="text"
+      name="RWteacherName"
+      id="RWteacherName"
+      required
+    /><br />
 
-        <div>
-          <label>In welke weken van de minor had je het vak?</label><br />
-          <input type="radio" name="TWweeks" id="TWweeks1-3" value="1-3" />
-          <label for="week1-3">weken 1-3</label><br />
-          <input type="radio" name="TWweeks" id="TWweeks4-6" value="4-6" />
-          <label for="week4-6">weken 4-6</label><br />
-          <input type="radio" name="TWweeks" id="TWweeks7-9" value="7-9" />
-          <label for="week7-9">weken 7-9</label><br />
-          <input type="radio" name="TWweeks" id="TWweeks10-12" value="10-12" />
-          <label for="week10-12">weken 10-12</label><br />
-        </div>
-        <div>
-          <label for="TWmaterial">Hoe moeilijk vond je de lesstof?</label><br />
-          <input type="radio" name="TWmaterial" id="TWmaterial1" value="1" />
-          <label for="TWmaterial1">1</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial2" value="2" />
-          <label for="TWmaterial2">2</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial3" value="3" />
-          <label for="TWmaterial3">3</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial4" value="4" />
-          <label for="TWmaterial4">4</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial5" value="5" />
-          <label for="TWmaterial5">5</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial6" value="6" />
-          <label for="TWmaterial6">6</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial7" value="7" />
-          <label for="TWmaterial7">7</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial8" value="8" />
-          <label for="TWmaterial8">8</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial9" value="9" />
-          <label for="TWmaterial9">9</label>
-          <input type="radio" name="TWmaterial" id="TWmaterial10" value="10" />
-          <label for="TWmaterial10">10</label><br />
-        </div>
+    <div>
+      <label>In welke weken van de minor had je het vak?</label><br />
+      <input type="radio" name="RWweeks" id="RWweeks1-3" value="1-3" />
+      <label for="week1-3">weken 1-3</label><br />
+      <input type="radio" name="RWweeks" id="RWweeks4-6" value="4-6" />
+      <label for="week4-6">weken 4-6</label><br />
+      <input type="radio" name="RWweeks" id="RWweeks7-9" value="7-9" />
+      <label for="week7-9">weken 7-9</label><br />
+      <input type="radio" name="RWweeks" id="RWweeks10-12" value="10-12" />
+      <label for="week10-12">weken 10-12</label><br />
+    </div>
+    <div>
+      <label for="RWmaterial">Hoe moeilijk vond je de lesstof?</label><br />
+      <input type="radio" name="RWmaterial" id="RWmaterial1" value="1" />
+      <label for="RWmaterial1">1</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial2" value="2" />
+      <label for="RWmaterial2">2</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial3" value="3" />
+      <label for="RWmaterial3">3</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial4" value="4" />
+      <label for="RWmaterial4">4</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial5" value="5" />
+      <label for="RWmaterial5">5</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial6" value="6" />
+      <label for="RWmaterial6">6</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial7" value="7" />
+      <label for="RWmaterial7">7</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial8" value="8" />
+      <label for="RWmaterial8">8</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial9" value="9" />
+      <label for="RWmaterial9">9</label>
+      <input type="radio" name="RWmaterial" id="RWmaterial10" value="10" />
+      <label for="RWmaterial10">10</label><br />
+    </div>
 
-        <div>
-          <label for="TWexplanation">Hoe duidelijk was de uitleg?</label><br />
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation1"
-            value="1"
-          />
-          <label for="TWexplanation1">1</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation2"
-            value="2"
-          />
-          <label for="TWexplanation2">2</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation3"
-            value="3"
-          />
-          <label for="TWexplanation3">3</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation4"
-            value="4"
-          />
-          <label for="TWexplanation4">4</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation5"
-            value="5"
-          />
-          <label for="TWexplanation5">5</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation6"
-            value="6"
-          />
-          <label for="TWexplanation6">6</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation7"
-            value="7"
-          />
-          <label for="TWexplanation7">7</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation8"
-            value="8"
-          />
-          <label for="TWexplanation8">8</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation9"
-            value="9"
-          />
-          <label for="TWexplanation9">9</label>
-          <input
-            type="radio"
-            name="TWexplanation"
-            id="TWexplanation10"
-            value="10"
-          />
-          <label for="TWexplanation10">10</label><br />
-        </div>
-        <div>
-          <label for="TWunderstanding">Hoe goed snap je het?</label><br />
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding1"
-            value="1"
-          />
-          <label for="TWunderstanding1">1</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding2"
-            value="2"
-          />
-          <label for="TWunderstanding2">2</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding3"
-            value="3"
-          />
-          <label for="TWunderstanding3">3</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding4"
-            value="4"
-          />
-          <label for="TWunderstanding4">4</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding5"
-            value="5"
-          />
-          <label for="TWunderstanding5">5</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding6"
-            value="6"
-          />
-          <label for="TWunderstanding6">6</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding7"
-            value="7"
-          />
-          <label for="TWunderstanding7">7</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding8"
-            value="8"
-          />
-          <label for="TWunderstanding8">8</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding9"
-            value="9"
-          />
-          <label for="TWunderstanding9">9</label>
-          <input
-            type="radio"
-            name="TWunderstanding"
-            id="TWunderstanding10"
-            value="10"
-          />
-          <label for="TWunderstanding10">10</label><br />
-        </div>
-      </fieldset>
-      <button type="submit" onclick="clearItems()">Verstuur</button>
+    <div>
+      <label for="RWexplanation">Hoe duidelijk was de uitleg?</label><br />
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation1"
+        value="1"
+      />
+      <label for="RWexplanation1">1</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation2"
+        value="2"
+      />
+      <label for="RWexplanation2">2</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation3"
+        value="3"
+      />
+      <label for="RWexplanation3">3</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation4"
+        value="4"
+      />
+      <label for="RWexplanation4">4</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation5"
+        value="5"
+      />
+      <label for="RWexplanation5">5</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation6"
+        value="6"
+      />
+      <label for="RWexplanation6">6</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation7"
+        value="7"
+      />
+      <label for="RWexplanation7">7</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation8"
+        value="8"
+      />
+      <label for="RWexplanation8">8</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation9"
+        value="9"
+      />
+      <label for="RWexplanation9">9</label>
+      <input
+        type="radio"
+        name="RWexplanation"
+        id="RWexplanation10"
+        value="10"
+      />
+      <label for="RWexplanation10">10</label><br />
+    </div>
+    <div>
+      <label for="RWunderstanding">Hoe goed snap je het?</label><br />
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding1"
+        value="1"
+      />
+      <label for="RWunderstanding1">1</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding2"
+        value="2"
+      />
+      <label for="RWunderstanding2">2</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding3"
+        value="3"
+      />
+      <label for="RWunderstanding3">3</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding4"
+        value="4"
+      />
+      <label for="RWunderstanding4">4</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding5"
+        value="5"
+      />
+      <label for="RWunderstanding5">5</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding6"
+        value="6"
+      />
+      <label for="RWunderstanding6">6</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding7"
+        value="7"
+      />
+      <label for="RWunderstanding7">7</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding8"
+        value="8"
+      />
+      <label for="RWunderstanding8">8</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding9"
+        value="9"
+      />
+      <label for="RWunderstanding9">9</label>
+      <input
+        type="radio"
+        name="RWunderstanding"
+        id="RWunderstanding10"
+        value="10"
+      />
+      <label for="RWunderstanding10">10</label><br />
+    </div>
+      </fieldset> -->
+      <button type="submit">Verstuur</button>
     </form>
   </body>
 </html>
