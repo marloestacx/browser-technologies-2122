@@ -10,50 +10,50 @@
 
     <section>
       <article>
-        <p>Studentnummer: <%- data.studentID %></p>
+        <p>Studentennummer: <%- data.studentID %></p>
         <p>Naam: <%- data.studentName %></p>
 
         <h2>Web App From Scratch</h2>
         <p>Docent: <%- data.WAFSteacherName %></p>
-        <p>Weken: <%- data.WAFSweeks %></p>
-        <p>Moeilijkheid: <%-data.WAFSmaterial %></p>
-        <p>Uitleg: <%- data.WAFSexplanation %></p>
-        <p>Begrepen: <%- data.WAFSexplanation %></p>
+        <p>Weken: <%- data.WAFSweeks.replace( /^\D+/g, '') %></p>
+        <p>Moeilijkheid: <%-data.WAFSmaterial.replace( /^\D+/g, '')%></p>
+        <p>Uitleg: <%- data.WAFSexplanation.replace( /^\D+/g, '') %></p>
+        <p>Begrepen: <%- data.WAFSexplanation.replace( /^\D+/g, '') %></p>
 
         <h2>CSS To The Rescue</h2>
         <p>Docent: <%- data.CSSteacherName %></p>
-        <p>Weken: <%- data.CSSweeks %></p>
-        <p>Moeilijkheid: <%- data.CSSmaterial %></p>
-        <p>Uitleg: <%- data.CSSexplanation %></p>
-        <p>Begrepen: <%- data.CSSexplanation %></p>
+        <p>Weken: <%- data.CSSweeks.replace( /^\D+/g, '') %></p>
+        <p>Moeilijkheid: <%- data.CSSmaterial.replace( /^\D+/g, '') %></p>
+        <p>Uitleg: <%- data.CSSexplanation.replace( /^\D+/g, '') %></p>
+        <p>Begrepen: <%- data.CSSexplanation.replace( /^\D+/g, '') %></p>
 
         <h2>Progressive Web Apps</h2>
         <p>Docent: <%- data.PWAteacherName %></p>
-        <p>Weken: <%- data.PWAweeks %></p>
-        <p>Moeilijkheid: <%- data.PWAmaterial %></p>
-        <p>Uitleg: <%- data.PWAexplanation %></p>
-        <p>Begrepen: <%- data.PWAexplanation %></p>
+        <p>Weken: <%- data.PWAweeks.replace( /^\D+/g, '') %></p>
+        <p>Moeilijkheid: <%- data.PWAmaterial.replace( /^\D+/g, '') %></p>
+        <p>Uitleg: <%- data.PWAexplanation.replace( /^\D+/g, '') %></p>
+        <p>Begrepen: <%- data.PWAexplanation.replace( /^\D+/g, '') %></p>
 
         <h2>Browser Technologies</h2>
         <p>Docent: <%- data.BTteacherName %></p>
-        <p>Weken: <%- data.BTweeks %></p>
-        <p>Moeilijkheid: <%- data.BTmaterial %></p>
-        <p>Uitleg: <%- data.BTexplanation %></p>
-        <p>Begrepen: <%- data.BTexplanation %></p>
+        <p>Weken: <%- data.BTweeks.replace( /^\D+/g, '') %></p>
+        <p>Moeilijkheid: <%- data.BTmaterial.replace( /^\D+/g, '') %></p>
+        <p>Uitleg: <%- data.BTexplanation.replace( /^\D+/g, '') %></p>
+        <p>Begrepen: <%- data.BTexplanation.replace( /^\D+/g, '') %></p>
 
         <h2>Human Centered Design</h2>
         <p>Docent: <%- data.HCDteacherName %></p>
-        <p>Weken: <%- data.BRWeeks %></p>
-        <p>Moeilijkheid: <%- data.HCDmaterial %></p>
-        <p>Uitleg: <%- data.HCDexplanation %></p>
-        <p>Begrepen: <%- data.HCDexplanation %></p>
+        <p>Weken: <%- data.HCDweeks.replace( /^\D+/g, '') %></p>
+        <p>Moeilijkheid: <%- data.HCDmaterial.replace( /^\D+/g, '') %></p>
+        <p>Uitleg: <%- data.HCDexplanation.replace( /^\D+/g, '') %></p>
+        <p>Begrepen: <%- data.HCDexplanation.replace( /^\D+/g, '') %></p>
 
         <h2>Realtime Web</h2>
         <p>Docent: <%- data.RWteacherName %></p>
-        <p>Weken: <%- data.BRWeeks %></p>
-        <p>Moeilijkheid: <%- data.RWmaterial %></p>
-        <p>Uitleg: <%- data.RWexplanation %></p>
-        <p>Begrepen: <%- data.RWexplanation %></p>
+        <p>Weken: <%- data.RWweeks.replace( /^\D+/g, '') %></p>
+        <p>Moeilijkheid: <%- data.RWmaterial.replace( /^\D+/g, '') %></p>
+        <p>Uitleg: <%- data.RWexplanation.replace( /^\D+/g, '') %></p>
+        <p>Begrepen: <%- data.RWexplanation.replace( /^\D+/g, '') %></p>
       </article>
     </section>
   </body>
