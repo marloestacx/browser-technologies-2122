@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 // redirect naar send page
 app.post("/", (req, res) => {
   const enquete = new Enquete(req.body);
-  console.log(enquete._id);
+
   enquete
     .save()
     .then((result) => {
