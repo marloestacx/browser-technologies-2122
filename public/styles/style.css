@@ -66,16 +66,21 @@ article {
 }
 
 button {
-  border: none;
-  color: white;
+  /* border: none;
+  color: black;
   padding: 1em;
   text-align: center;
   text-decoration: none;
-  background-color: #377e3a;
+  background-color: #f4f5f7;
   font-size: 12pt;
   align-self: flex-end;
   margin: 1em;
-  cursor: pointer;
+  cursor: pointer; */
+  border: 1px solid black;
+  border-radius: 8px;
+  align-self: flex-end;
+  padding: 1em 1.5em;
+  margin: 0 1em 1em 0;
 }
 
 input {
