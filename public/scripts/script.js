@@ -25,7 +25,7 @@ const getValues = () => {
   inputRadio.forEach((input) => {
     const item = localStorage.getItem(input.name);
     if (item) input.value = item;
-    document.getElementById(input.name + item).checked = true;
+    document.getElementById(item).checked = true;
   });
 
   localStorage.clear();
@@ -39,7 +39,7 @@ window.onbeforeunload = function () {
 
   // save radio buttons
   inputRadio.forEach((input) => {
-    localStorage.setItem(input.name, input.value);
+    localStorage.setItem(input.name, input.id);
   });
 
   // save text fields
