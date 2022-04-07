@@ -32,7 +32,7 @@ app.post("/", (req, res) => {
 
   enquete
     .save()
-    .then((result) => {
+    .then(() => {
       res.redirect("/send");
     })
     .catch((err) => {
@@ -50,7 +50,6 @@ app.get("/result", (req, res) => {
     .sort({ createdAt: -1 })
     .then((result) => {
       res.render("result", {
-        title: "Alle Ingevulde Enquetes",
         data: result,
       });
     })
@@ -63,7 +62,7 @@ app.get("/detail/:id", (req, res) => {
   const id = req.params.id;
   Enquete.findById(id)
     .then((result) => {
-      res.render("details", { data: result, title: "Enquete" });
+      res.render("details", { data: result });
     })
     .catch((err) => {
       console.log(err);
