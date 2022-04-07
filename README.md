@@ -1,6 +1,6 @@
 # Enquête
 
-Complete a survey about the minor
+Complete a survey about the minor Web Design & Development
 
 ## Table of contents
 
@@ -16,7 +16,7 @@ Complete a survey about the minor
 
 ## Concept
 
-The user can fill in a survey about the minor web design, when he leaves the page his progress will be saved, and he can later continue where he left off. The user can also see the answers of the survey.
+The user can fill in a survey about the minor Web Design & Development, when he leaves the page his progress will be saved, and he can later continue where he left off. The user can also see the answers of the survey.
 
 Survey page
 ![homebt](https://user-images.githubusercontent.com/24413936/162255025-c435b243-077d-4348-9f42-8c6dc8b59537.png)
@@ -33,6 +33,9 @@ Answer page
 I want to be able to fill in a survey about the minor Web Development, with different answer options. If I don't finish the survey, I'll want to pick up where I left off later.
 
 ## Wireflow
+
+![wireflow](https://user-images.githubusercontent.com/24413936/162256673-dd93b952-d9b0-49b9-bf6b-d8de72303bcd.png)
+
 
 ## Progressive Enhancement
 
