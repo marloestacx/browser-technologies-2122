@@ -43,13 +43,15 @@ I want to be able to fill in a survey about the minor Web Development, with diff
 - CSS: With CSS I added some styling to the website, this makes the website prettier and more pleasant to use. 
 - JavaScript: With JavaScript the page saves your progress, this makes the website even better to use.
 
-The Survey
-![homebt](https://user-images.githubusercontent.com/24413936/162254890-9a776172-959a-415c-ac32-1de6fe2bb16a.png)
-
-
-Without CSS
+Only HTML
 ![cssoff](https://user-images.githubusercontent.com/24413936/162254876-26b6a0bf-df06-475a-bce7-3fee7513115c.png)
 
+With CSS
+![homebt](https://user-images.githubusercontent.com/24413936/162254890-9a776172-959a-415c-ac32-1de6fe2bb16a.png)
+
+With JavaScript
+
+![gifjs](https://user-images.githubusercontent.com/24413936/162258203-d2044f7d-35b6-4704-895c-18192b69fd9d.gif)
 
 ## Features
 
