@@ -7,7 +7,7 @@ const enqueteSchema = new Schema(
       type: String,
     },
     studentID: {
-      type: Number,
+      type: String,
     },
 
     WAFSteacherName: {
@@ -17,92 +17,92 @@ const enqueteSchema = new Schema(
       type: String,
     },
     WAFSmaterial: {
-      type: Number,
+      type: String,
     },
     WAFSexplanation: {
-      type: Number,
+      type: String,
     },
     WAFSunderstanding: {
-      type: Number,
+      type: String,
     },
 
     CSSteacherName: {
       type: String,
     },
     CSSweeks: {
-      type: Number,
+      type: String,
     },
     CSSmaterial: {
-      type: Number,
+      type: String,
     },
     CSSexplanation: {
-      type: Number,
+      type: String,
     },
     CSSunderstanding: {
-      type: Number,
+      type: String,
     },
 
     PWAteacherName: {
       type: String,
     },
     PWAweeks: {
-      type: Number,
+      type: String,
     },
     PWAmaterial: {
-      type: Number,
+      type: String,
     },
     PWAexplanation: {
-      type: Number,
+      type: String,
     },
     PWAunderstanding: {
-      type: Number,
+      type: String,
     },
 
     BTteacherName: {
       type: String,
     },
     BTweeks: {
-      type: Number,
+      type: String,
     },
     BTmaterial: {
-      type: Number,
+      type: String,
     },
     BTexplanation: {
-      type: Number,
+      type: String,
     },
     BTunderstanding: {
-      type: Number,
+      type: String,
     },
     HCDteacherName: {
       type: String,
     },
     HCDweeks: {
-      type: Number,
+      type: String,
     },
     HCDmaterial: {
-      type: Number,
+      type: String,
     },
     HCDexplanation: {
-      type: Number,
+      type: String,
     },
     HCDunderstanding: {
-      type: Number,
+      type: String,
     },
 
     RWteacherName: {
       type: String,
     },
     RWweeks: {
-      type: Number,
+      type: String,
     },
     RWmaterial: {
-      type: Number,
+      type: String,
     },
     RWexplanation: {
-      type: Number,
+      type: String,
     },
     RWunderstanding: {
-      type: Number,
+      type: String,
     },
   },
   { timestamps: true }
