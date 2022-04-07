@@ -1,23 +1,6 @@
 body {
-  background: radial-gradient(
-    circle,
-    rgba(247, 181, 146, 1) 0%,
-    rgba(214, 95, 117, 1) 100%
-  );
+  background-color: #d65f75;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-@supports not (
-  background:
-    radial-gradient(
-      circle,
-      rgba(247, 181, 146, 1) 0%,
-      rgba(214, 95, 117, 1) 100%
-    )
-) {
-  body {
-    background-color: #d65f75;
-  }
 }
 
 header {
@@ -35,16 +18,8 @@ header h1 {
 
 form,
 section {
-  display: flex;
-  flex-direction: column;
-}
-
-@supports not (display: flex) {
-  form,
-  section {
-    margin: 0 auto;
-    width: 90%;
-  }
+  margin: 0 auto;
+  width: 90%;
 }
 
 legend {
@@ -66,16 +41,6 @@ article {
 }
 
 button {
-  /* border: none;
-  color: black;
-  padding: 1em;
-  text-align: center;
-  text-decoration: none;
-  background-color: #f4f5f7;
-  font-size: 12pt;
-  align-self: flex-end;
-  margin: 1em;
-  cursor: pointer; */
   border: 1px solid black;
   border-radius: 8px;
   align-self: flex-end;
@@ -100,9 +65,35 @@ a {
 
 .answers {
   border: 1px solid black;
+  background-color: #f4f5f7;
   border-radius: 8px;
   align-self: flex-end;
   padding: 0.5em 1em;
   width: 5em;
   margin: 0 1em 1em 0;
+}
+
+@supports (
+  background:
+    radial-gradient(
+      circle,
+      rgba(247, 181, 146, 1) 0%,
+      rgba(214, 95, 117, 1) 100%
+    )
+) {
+  body {
+    background: radial-gradient(
+      circle,
+      rgba(247, 181, 146, 1) 0%,
+      rgba(214, 95, 117, 1) 100%
+    );
+  }
+}
+
+@supports (display: flex) {
+  form,
+  section {
+    display: flex;
+    flex-direction: column;
+  }
 }
