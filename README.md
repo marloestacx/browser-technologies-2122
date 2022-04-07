@@ -14,7 +14,9 @@ Complete a survey about the minor
 * [License](https://github.com/marloestacx/bt-enquete#license)
 
 ## Concept
+Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
+## User Story
 
 
 ## Wireflow
@@ -55,7 +57,7 @@ npm start
 - [x] Fill in survey
 - [x] Save survey answers
 - [x] Continue survey later
-- [ ] View survey answers
+- [x] View survey answers
 - [ ] Get average of answers
 
 
