@@ -7,20 +7,40 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@supports not (background: radial-gradient()) {
+@supports not (
+  background:
+    radial-gradient(
+      circle,
+      rgba(247, 181, 146, 1) 0%,
+      rgba(214, 95, 117, 1) 100%
+    )
+) {
   body {
     background-color: #d65f75;
   }
 }
 
-form {
+header {
+  background-color: #f4f5f7;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+form,
+section {
   display: flex;
   flex-direction: column;
 }
 
 @supports not (display: flex) {
-  form {
-    float: center;
+  form,
+  section {
+    margin: 0 auto;
+    width: 90%;
   }
 }
 
@@ -28,13 +48,18 @@ legend {
   font-size: 16pt;
 }
 
-fieldset {
+fieldset,
+article {
   align-self: center;
   border-radius: 15px;
   width: 60vw;
   margin-bottom: 1em;
   border: none;
   background-color: #f4f5f7;
+}
+
+article {
+  padding: 1em 0 1em 1em;
 }
 
 button {
@@ -58,4 +83,9 @@ input {
 
 fieldset div {
   margin-bottom: 1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
