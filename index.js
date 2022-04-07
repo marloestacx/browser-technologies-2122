@@ -5,8 +5,7 @@ const port = process.env.PORT;
 const mongoose = require("mongoose");
 const Enquete = require("./models/enquete");
 const bodyParser = require("body-parser");
-const dbURL =
-  "mongodb+srv://admin:admin@browsert.cp33l.mongodb.net/BrowserTech?retryWrites=true&w=majority";
+const dbURL = process.env.DBURL;
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -16,7 +15,7 @@ app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//mongoose connect to db
+// mongoose connect to db
 mongoose
   .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Database connected!"))
@@ -26,13 +25,11 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-// send enquete to db
+// send survey to db
 // redirect naar send page
 app.post("/", (req, res) => {
   const enquete = new Enquete(req.body);
-
-  console.log(req.body);
-
+  console.log(enquete._id);
   enquete
     .save()
     .then((result) => {
@@ -46,6 +43,31 @@ app.post("/", (req, res) => {
 // send page
 app.get("/send", (req, res) => {
   res.render("send");
+});
+
+app.get("/result", (req, res) => {
+  Enquete.find()
+    .sort({ createdAt: -1 })
+    .then((result) => {
+      res.render("result", {
+        title: "Alle Ingevulde Enquetes",
+        data: result,
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.get("/detail/:id", (req, res) => {
+  const id = req.params.id;
+  Enquete.findById(id)
+    .then((result) => {
+      res.render("details", { data: result, title: "Enquete" });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
 app.listen(port, () => {
