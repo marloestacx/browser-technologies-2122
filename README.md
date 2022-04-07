@@ -16,7 +16,7 @@ Complete a survey about the minor
 
 ## Concept
 
-The user can fill in a survey about the minor web design, when he leaves the page his progress will be saved and he can later continue where he left off. The user can also see the answers of the survey.
+The user can fill in a survey about the minor web design, when he leaves the page his progress will be saved, and he can later continue where he left off. The user can also see the answers of the survey.
 
 ## User Story
 
@@ -26,31 +26,31 @@ I want to be able to fill in a survey about the minor Web Development, with diff
 
 ## Progressive Enhancement
 
-HTML - The core part of this website is a form which is built with HTML
-CSS - With CSS I added some styling to the website
-JavaScript - With JavaScript the page saves your progress
+- HTML: The core part of this website is a form which is built with HTML. You can always fill in and submit the survey and see your results.
+- CSS: With CSS I added some styling to the website, this makes the website prettier and more pleasant to use. 
+- JavaScript: With JavaScript the page saves your progress
 
 ## Features
 
-You can fill in the enquete en submit it. Your answers will be saved and you can complete the enquete the next time you visit the website.
+You can fill in the survey and submit it. Your answers will be saved, and you can complete the survey the next time you visit the website.
 
 ## Testing
 
 ### Google Chrome Desktop
 
-In this browser the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in your answers will be saved for the next time. When turning off JavaScript you can still fill in the survey and see the answers but your answers will no longer be saved.
+In this browser, the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in, your answers will be saved for the next time. When turning off JavaScript you can still fill in the survey and see the answers, but your answers will no longer be saved.
 
 ### Safari Desktop
 
-On Safari Desktop the website works perfectly, just like on Chrome you can fill in the survey and see the results. When you close the page your progress get's saved automatically in the local storage. When JavaScript is turned off you can still fill in the survey and submit it but your progress will no longer be saved automatically.
+On Safari Desktop the website works perfectly, just like on Chrome you can fill in the survey and see the results. When you close the page, your progress gets saved automatically in the local storage. When JavaScript is turned off, you can still fill in the survey and submit it, but your progress will no longer be saved automatically.
 
 ## Safari iPhone 13
 
-In this browser the website works. You can fill in the survey and see the results. Saving your process when filling in the survey doesn't work.
+In this browser, the website works. You can fill in the survey and see the results. Saving your process when filling in the survey doesn't work.
 
 ## Android 11 OnePlus 7T Pro
 
-In this browser the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in your answers will be saved for the next time.
+In this browser, the website works perfectly. You can fill in the survey and see the results. When you close the page while you're filling the survey in, your answers will be saved for the next time.
 
 ## Installation
 
