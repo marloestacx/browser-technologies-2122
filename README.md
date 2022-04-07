@@ -18,6 +18,16 @@ Complete a survey about the minor
 
 The user can fill in a survey about the minor web design, when he leaves the page his progress will be saved, and he can later continue where he left off. The user can also see the answers of the survey.
 
+Survey page
+![homebt](https://user-images.githubusercontent.com/24413936/162255025-c435b243-077d-4348-9f42-8c6dc8b59537.png)
+
+Result page
+![download](https://user-images.githubusercontent.com/24413936/162255050-624d8b15-9bd6-48e0-a5d3-b354ac1173bd.png)
+
+Answer page
+![anwsersbt](https://user-images.githubusercontent.com/24413936/162255043-cdb98dee-320a-42cc-a85e-c4cc63bee737.png)
+
+
 ## User Story
 
 I want to be able to fill in a survey about the minor Web Development, with different answer options. If I don't finish the survey, I'll want to pick up where I left off later.
@@ -28,7 +38,15 @@ I want to be able to fill in a survey about the minor Web Development, with diff
 
 - HTML: The core part of this website is a form which is built with HTML. You can always fill in and submit the survey and see your results.
 - CSS: With CSS I added some styling to the website, this makes the website prettier and more pleasant to use. 
-- JavaScript: With JavaScript the page saves your progress
+- JavaScript: With JavaScript the page saves your progress, this makes the website even better to use.
+
+The Survey
+![homebt](https://user-images.githubusercontent.com/24413936/162254890-9a776172-959a-415c-ac32-1de6fe2bb16a.png)
+
+
+Without CSS
+![cssoff](https://user-images.githubusercontent.com/24413936/162254876-26b6a0bf-df06-475a-bce7-3fee7513115c.png)
+
 
 ## Features
 
